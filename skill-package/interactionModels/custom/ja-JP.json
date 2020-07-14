@@ -1,0 +1,74 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "コーヒーショップ",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "OrderIntent",
+          "slots": [
+            {
+              "name": "menu",
+              "type": "MENU"
+            },
+            {
+              "name": "amount",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{menu} を {amount} 杯お願い",
+            "{menu} をお願い",
+            "{menu} をください",
+            "{menu}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "エスプレッソ"
+              }
+            },
+            {
+              "name": {
+                "value": "カフェラテ",
+                "synonyms": [
+                  "ラテ"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "コーヒー",
+                "synonyms": [
+                  "ブレンド",
+                  "ホット"
+                ]
+              }
+            }
+          ],
+          "name": "MENU"
+        }
+      ]
+    }
+  },
+  "version": "5"
+}
