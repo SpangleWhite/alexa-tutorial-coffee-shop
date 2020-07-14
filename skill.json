@@ -28,8 +28,6 @@
       "custom": {
         "endpoint": {
           "uri": "arn:aws:lambda:us-east-1:737504307327:function:8814e8c5-bb38-4687-813a-cd2e9c5bbcad:Release_0"
-        },
-        "interfaces": []
         }
       }
     },
